@@ -35,7 +35,7 @@ It compiles the app using AOT to make it ready for the Play Store.
 
 **Widget life cycle**
 
-#     Key Concepts
+**Key Concepts**
    StatelessWidget: Only has build(). No lifecycle.
    StatefulWidget: Has full lifecycle because its UI can change.
 
