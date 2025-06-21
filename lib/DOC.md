@@ -1,7 +1,7 @@
--vs code(Code editor)- no dev tools
--Intellij IDEA(" + IDE(Dev tool available))
--Jetbens are famous for IDE Development.
--Flutter is a framework(Building) and Dart(Build bananor jonno materials gula) is programming language.
+1. vs code(Code editor)- no dev tools
+2. Intellij IDEA(" + IDE(Dev tool available))
+3. Jetbens are famous for IDE Development.
+4. Flutter is a framework(Building) and Dart(Build bananor jonno materials gula) is programming language.
 
 # SDK
 
