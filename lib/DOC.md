@@ -30,3 +30,20 @@ It compiles the app using AOT to make it ready for the Play Store.
    Type	 When Used	          Benefit	                         Example
    JIT	 During development	  Fast testing (hot reload)	         flutter run
    AOT	 For release	      Fast app + secure code	         flutter build apk
+
+8. **Widget life cycle**
+
+#     Key Concepts
+   StatelessWidget: Only has build(). No lifecycle.
+   StatefulWidget: Has full lifecycle because its UI can change.
+
+   createState()->Called once when the widget is created, Creates the State object.(@override State<MyWidget> createState() => _MyWidgetState();)
+   ↓
+   initState()->Called once when the State is inserted into the widget tree, Use it to initialize data, start animations, etc.
+   ↓
+   build()->Called every time UI needs to be updated, Returns the UI of the widget. ←→ didUpdateWidget()->Called when the parent widget changes and needs to update this widget.
+   ↓
+   dispose()->Called when the widget is removed from the tree, Clean up (e.g., close streams, controllers).
+
+
+9. 
