@@ -1,7 +1,7 @@
--vs code(Code editor)- no dev tools
--Intellij IDEA(" + IDE(Dev tool available))
--Jetbens are famous for IDE Development.
--Flutter is a framework(Building) and Dart(Build bananor jonno materials gula) is programming language.
+_-vs code(Code editor)- no dev tools_
+_-Intellij IDEA(" + IDE(Dev tool available))_
+_-Jetbens are famous for IDE Development._
+_-Flutter is a framework(Building) and Dart(Build bananor jonno materials gula) is programming language._
 
 **SDK->**
 Think of the Flutter SDK like a box of tools that includes everything you need to make beautiful apps:
