@@ -95,6 +95,13 @@ final(works in run time)-> porobortite value assign kora jabe variable declare e
 
 void printName()=>print('hello');// when there is a single task to perform
 
+# Infinite loop
+
+for(int i=1; i>0; i++){print('hello: $i');}
+
+# Line break after each row
+
+stdout.writeln();// For this import ('dart:io')
 
 
 
