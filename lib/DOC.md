@@ -81,6 +81,20 @@ _List- is a ordered collection of object._
 
 # final vs const
 
+const(works in compile time)-> porobortite value change kora jay na ekbar value diye dile.
+final(works in run time)-> porobortite value assign kora jabe variable declare er por. But ekbar assign kore felle ta change kora jabe na.
+1. const a initially value set korte hobe.
+2. final a initially value set na korleo pore jeta set hobe shetai final hobe.
+
+# Mutable and Immutable
+
+1. Mutable- Data can change
+2. Immutable- Data can't change
+
+# Arrow function
+
+void printName()=>print('hello');// when there is a single task to perform
+
 
 
 
