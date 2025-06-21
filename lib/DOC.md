@@ -68,3 +68,16 @@ _Final (run time value)_
 
 # Dart Topic
 
+_List- is a ordered collection of object._
+**List method**
+1. removeWhere(): Remove all elements that satisfy a condition
+   Example: fruits.removeWhere(fruits)=>fruits.startsWith('b');
+2. For in loop
+   Example: for(String fruit in fruits){print(fruit);}
+3. forEach loop
+   Example: fruits.forEach((fruit)=>print(fruit));
+4. Where()-> filters elements based on condition.
+   Example: List<String> longWords= fruits.where((fruit)=>fruit.length>5).toList();
+
+
+
