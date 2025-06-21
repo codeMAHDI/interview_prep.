@@ -42,13 +42,13 @@ It compiles the app using AOT to make it ready for the Play Store.
    StatelessWidget: Only has build(). No lifecycle.
    StatefulWidget: Has full lifecycle because its UI can change.
 
-   createState()->Called once when the widget is created, Creates the State object.(@override State<MyWidget> createState() => _MyWidgetState();)
-   ↓
-   initState()->Called once when the State is inserted into the widget tree, Use it to initialize data, start animations, etc.
-   ↓
-   build()->Called every time UI needs to be updated, Returns the UI of the widget. ←→ didUpdateWidget()->Called when the parent widget changes and needs to update this widget. It is called when the parent widget (like MyApp) rebuilds and passes new data to the StatefulWidget (like MyHomePage), causing it to update.
-   ↓
-   dispose()->Called when the widget is removed from the tree, Clean up (e.g., close streams, controllers). 
+1. createState()->Called once when the widget is created, Creates the State object.(@override State<MyWidget> createState() => _MyWidgetState();)
+       ↓
+2. initState()->Called once when the State is inserted into the widget tree, Use it to initialize data, start animations, etc.
+       ↓
+3. build()->Called every time UI needs to be updated, Returns the UI of the widget. ←→ didUpdateWidget()->Called when the parent widget changes and needs to update this widget. It is called when the parent widget (like MyApp) rebuilds and passes new data to the StatefulWidget (like MyHomePage), causing it to update.
+       ↓
+4. dispose()->Called when the widget is removed from the tree, Clean up (e.g., close streams, controllers). 
    
 # Android Folder
 
