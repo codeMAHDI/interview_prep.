@@ -11,8 +11,8 @@ Think of the Flutter SDK like a box of tools that includes everything you need t
 3. Tools to test and run apps
 4. Dart programming language (used to write Flutter apps)
 
-**Full state change=> hot restart, je change ta instant dekhte chacchi=> hot reload**
-**AOT->Ahead of time->AOT compilation->hot restart, JIT->Just in time->JIT compilation->hot reload**
+_Full state change=> hot restart, je change ta instant dekhte chacchi=> hot reload_
+_AOT->Ahead of time->AOT compilation->hot restart, JIT->Just in time->JIT compilation->hot reload_
 
 **JIT (Just-in-Time) Compilation**
 -Used in development
