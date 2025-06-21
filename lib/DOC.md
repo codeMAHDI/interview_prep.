@@ -6,10 +6,10 @@
 # SDK
 
 Think of the Flutter SDK like a box of tools that includes everything you need to make beautiful apps:
--Pre-built widgets (buttons, text fields, etc.)
--Graphics engine to draw UI
--Tools to test and run apps
--Dart programming language (used to write Flutter apps)
+1. Pre-built widgets (buttons, text fields, etc.)
+2. Graphics engine to draw UI
+3. Tools to test and run apps
+4. Dart programming language (used to write Flutter apps)
 
 **Full state change=> hot restart, je change ta instant dekhte chacchi=> hot reload**
 **AOT->Ahead of time->AOT compilation->hot restart, JIT->Just in time->JIT compilation->hot reload**
