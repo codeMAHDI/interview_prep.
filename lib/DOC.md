@@ -30,6 +30,7 @@ When you're building your Flutter app and use Hot Reload, that’s JIT working.
    When you run this command:
    _flutter build apk_
 It compiles the app using AOT to make it ready for the Play Store.
+
 **Summary:**
    Type	 When Used	          Benefit	                         Example
    JIT	 During development	  Fast testing (hot reload)	         flutter run
