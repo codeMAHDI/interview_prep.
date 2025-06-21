@@ -1,7 +1,8 @@
-vs code(Code editor)- no dev tools
-Intellij IDEA(" + IDE(Dev tool available))
-Jetbens are famous for IDE Development.
-Flutter is a framework(Building) and Dart(Build bananor jonno materials gula) is programming language.
+-vs code(Code editor)- no dev tools
+-Intellij IDEA(" + IDE(Dev tool available))
+-Jetbens are famous for IDE Development.
+-Flutter is a framework(Building) and Dart(Build bananor jonno materials gula) is programming language.
+
 **SDK->**
 Think of the Flutter SDK like a box of tools that includes everything you need to make beautiful apps:
 -Pre-built widgets (buttons, text fields, etc.)
@@ -9,9 +10,9 @@ Think of the Flutter SDK like a box of tools that includes everything you need t
 -Tools to test and run apps
 -Dart programming language (used to write Flutter apps)
 
-_**Full state change=> hot restart, je change ta instant dekhte chacchi=> hot reload**_
+**Full state change=> hot restart, je change ta instant dekhte chacchi=> hot reload**
+**AOT->Ahead of time->AOT compilation->hot restart, JIT->Just in time->JIT compilation->hot reload**
 
-**_AOT->Ahead of time->AOT compilation->hot restart, JIT->Just in time->JIT compilation->hot reload_**
 **JIT (Just-in-Time) Compilation**
 -Used in development
 -Compiles code while the app is running
@@ -19,6 +20,7 @@ _**Full state change=> hot restart, je change ta instant dekhte chacchi=> hot re
 -Helps during testing and debugging
 Example:
 When you're building your Flutter app and use Hot Reload, that’s JIT working.
+
 **AOT (Ahead-of-Time) Compilation**
 -Used in production (release mode)
 -Compiles the code before running the app
