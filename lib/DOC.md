@@ -41,9 +41,14 @@ It compiles the app using AOT to make it ready for the Play Store.
    ↓
    initState()->Called once when the State is inserted into the widget tree, Use it to initialize data, start animations, etc.
    ↓
-   build()->Called every time UI needs to be updated, Returns the UI of the widget. ←→ didUpdateWidget()->Called when the parent widget changes and needs to update this widget.
+   build()->Called every time UI needs to be updated, Returns the UI of the widget. ←→ didUpdateWidget()->Called when the parent widget changes and needs to update this widget. It is called when the parent widget (like MyApp) rebuilds and passes new data to the StatefulWidget (like MyHomePage), causing it to update.
    ↓
    dispose()->Called when the widget is removed from the tree, Clean up (e.g., close streams, controllers).
-
-
-9. 
+9. # Folder
+analysis_option.yaml-> Code er vhul bahir korte use hoy.
+test-> code gula right/wrong sheta test kora jay. UI test, Unit test, Widget test, Integration test.
+10. var-> use korbo jokhon amra ekta variable er data type jani na.
+11. dynamic-> variable er value porobortite change kora jay. jeta var e jay na. Json format data er jonno ata use korbo.
+12. const-> shathe shathe value diye dite hobe.(compile time value)
+13. Final (run time value)
+14. 
