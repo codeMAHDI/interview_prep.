@@ -107,7 +107,17 @@ stdout.writeln();// For this import ('dart:io')
 
 1. runApp(): the entry point that tells Flutter what to display on the screen. main() is the starting point of a Dart program. runApp(MyApp()) tells Flutter: “Start the app and use MyApp as the first widget.”
 2. Material app: a pre-built widget in Flutter that sets up your app with Material Design — Google’s design language for mobile and web apps. MaterialApp is like the main frame of your app — it handles things like: Theme, routes, Home, title, Debug banner.
-3. Scaffold: a layout structure widget in Flutter that provides the basic visual structure of a Material Design app — like the skeleton of your app's screen. Think of Scaffold as a template for a typical app screen — it gives you areas to easily add: AppBar, body, floatingActionButton, drawer, bottomNavigationBar, backgroundColor 
+3. Scaffold: a layout structure widget in Flutter that provides the basic visual structure of a Material Design app — like the skeleton of your app's screen. Think of Scaffold as a template for a typical app screen — it gives you areas to easily add: AppBar, body, floatingActionButton, drawer, bottomNavigationBar, backgroundColor.
+4. Common Properties of Text Widget:
+   | Property         | Description                            | Example                     |
+   | ---------------- | -------------------------------------- | --------------------------- |
+   | `style`          | Text style (color, size, font, etc.)   | `TextStyle(fontSize: 20)`   |
+   | `textAlign`      | Align text (left, center, right, etc.) | `TextAlign.center`          |
+   | `maxLines`       | Max number of lines                    | `maxLines: 2`               |
+   | `overflow`       | Handle overflow (e.g. `...`)           | `TextOverflow.ellipsis`     |
+   | `softWrap`       | Wrap text to next line                 | `softWrap: true`            |
+   | `textDirection`  | Text direction (LTR, RTL)              | `TextDirection.ltr`         |
+   | `semanticsLabel` | For screen readers (accessibility)     | `"Label for screen reader"` |
 
 ## Why use MaterialApp?
 1. Gives access to Material widgets like Scaffold, AppBar, FloatingActionButton, etc.
@@ -118,5 +128,7 @@ Because it gives you a standard structure and lets you build apps that follow Ma
 
 ### Quick Note:
 You must use Scaffold inside a MaterialApp to get full Material functionality.
+
+
 
 
