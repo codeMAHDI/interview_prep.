@@ -123,7 +123,7 @@ stdout.writeln();// For this import ('dart:io')
    2. Image.network('https://...')          // From the internet
    3. Image.file(File('path'))              // From device file
    4. Image.memory(bytes)                   // From raw memory
-   **Common Properties of Image:**
+   Common Properties of Image:
    | Property         | Description                            | Example                         |
    | ---------------- | -------------------------------------- | ------------------------------- |
    | `width`          | Width of the image                     | `width: 100`                    |
