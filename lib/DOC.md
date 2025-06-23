@@ -118,6 +118,23 @@ stdout.writeln();// For this import ('dart:io')
    | `softWrap`       | Wrap text to next line                 | `softWrap: true`            |
    | `textDirection`  | Text direction (LTR, RTL)              | `TextDirection.ltr`         |
    | `semanticsLabel` | For screen readers (accessibility)     | `"Label for screen reader"` |
+5. Common Ways to Use Image:
+   Image.asset('assets/image.png')       // From local assets
+   Image.network('https://...')          // From the internet
+   Image.file(File('path'))              // From device file
+   Image.memory(bytes)                   // From raw memory
+   Common Properties of Image:
+   | Property         | Description                            | Example                         |
+   | ---------------- | -------------------------------------- | ------------------------------- |
+   | `width`          | Width of the image                     | `width: 100`                    |
+   | `height`         | Height of the image                    | `height: 100`                   |
+   | `fit`            | How the image should fit its container | `BoxFit.cover`, `contain`, etc. |
+   | `color`          | Apply color filter                     | `color: Colors.grey`            |
+   | `alignment`      | Align image inside its box             | `Alignment.center`              |
+   | `repeat`         | Repeat image                           | `ImageRepeat.repeatX`           |
+   | `loadingBuilder` | Custom loading widget while loading    | Show progress indicator         |
+   | `errorBuilder`   | Handle image load errors               | Show fallback UI                |
+
 
 ## Why use MaterialApp?
 1. Gives access to Material widgets like Scaffold, AppBar, FloatingActionButton, etc.
