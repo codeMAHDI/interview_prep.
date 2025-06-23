@@ -147,6 +147,8 @@ Because it gives you a standard structure and lets you build apps that follow Ma
 ### Quick Note:
 You must use Scaffold inside a MaterialApp to get full Material functionality.
 
+# Null safety and null variable
+
 
 
 
