@@ -119,10 +119,11 @@ stdout.writeln();// For this import ('dart:io')
    | `textDirection`  | Text direction (LTR, RTL)              | `TextDirection.ltr`         |
    | `semanticsLabel` | For screen readers (accessibility)     | `"Label for screen reader"` |
 5. Common Ways to Use Image:
-   Image.asset('assets/image.png')       // From local assets
-   Image.network('https://...')          // From the internet
-   Image.file(File('path'))              // From device file
-   Image.memory(bytes)                   // From raw memory
+   Image.asset('assets/image.png')       // From local assets.
+   Image.network('https://...')          // From the internet.
+   Image.file(File('path'))              // From device file.
+   Image.memory(bytes)                   // From raw memory.
+
    Common Properties of Image:
    | Property         | Description                            | Example                         |
    | ---------------- | -------------------------------------- | ------------------------------- |
