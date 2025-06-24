@@ -143,8 +143,8 @@ stdout.writeln();// For this import ('dart:io')
 # Run App, Material app, Scaffold, Text & image
 
 1. runApp(): the entry point that tells Flutter what to display on the screen. main() is the starting point of a Dart program. runApp(MyApp()) tells Flutter: “Start the app and use MyApp as the first widget.”
-2. Material app: a pre-built widget in Flutter that sets up your app with Material Design — Google’s design language for mobile and web apps. MaterialApp is like the main frame of your app — it handles things like: Theme, routes, Home, title, Debug banner.
-3. Scaffold: a layout structure widget in Flutter that provides the basic visual structure of a Material Design app — like the skeleton of your app's screen. Think of Scaffold as a template for a typical app screen — it gives you areas to easily add: AppBar, body, floatingActionButton, drawer, bottomNavigationBar, backgroundColor.
+2. Material app: **a pre-built widget** in Flutter that sets up your app with Material Design — Google’s design language for mobile and web apps. **MaterialApp is like the main frame of your app** — it handles things like: Theme, routes, Home, title, Debug banner.
+3. Scaffold: **a layout structure widget** in Flutter that provides the basic **visual structure** of a Material Design app — **like the skeleton of your app's screen**. Think of Scaffold as a template for a typical app screen — it gives you areas to easily add: AppBar, body, floatingActionButton, drawer, bottomNavigationBar, backgroundColor.
 4. Common Properties of Text Widget:
    | Property         | Description                            | Example                     |
    | ---------------- | -------------------------------------- | --------------------------- |
