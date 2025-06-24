@@ -185,6 +185,9 @@ You must use Scaffold inside a MaterialApp to get full Material functionality.
 
 # Null safety and null variable
 
+নাল সেফটি এর মাধ্যমে, আপনি নিশ্চিত করতে পারেন যে আপনার কোডে কখনও নাল মান (null value) প্রবেশ করবে না, যা অনেক সাধারণ বাগের কারণ হতে পারে।
+
+
 
 
 
