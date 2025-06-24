@@ -5,7 +5,7 @@
 
 # SDK
 
-Think of the Flutter SDK like a box of tools that includes everything you need to make beautiful apps:
+Think of the Flutter SDK like (**a box of tools**) that includes everything you need to make beautiful apps:
 1. Pre-built widgets (buttons, text fields, etc.)
 2. Graphics engine to draw UI
 3. Tools to test and run apps
@@ -53,6 +53,8 @@ It compiles the app using AOT to make it ready for the Play Store.
 _analysis_option.yaml-> Code er vhul bahir korte use hoy.
 test-> code gula right/wrong sheta test kora jay. UI test, Unit test, Widget test, Integration test._
 
+## Note
+
 _var-> use korbo jokhon amra ekta variable er data type jani na._
 _dynamic-> variable er value porobortite change kora jay. jeta var e jay na. Json format data er jonno ata use korbo._
 _const-> shathe shathe value diye dite hobe.(compile time value)_
@@ -85,6 +87,21 @@ const(works in compile time)-> porobortite value change kora jay na ekbar value 
 final(works in run time)-> porobortite value assign kora jabe variable declare er por. But ekbar assign kore felle ta change kora jabe na.
 1. const a initially value set korte hobe.
 2. final a initially value set na korleo pore jeta set hobe shetai final hobe.
+
+## Final
+
+ডার্টে final কীওয়ার্ড একটি ভেরিয়েবল ঘোষণা করতে ব্যবহৃত হয় যা শুধুমাত্র একবার মান সেট করা যাবে। একবার মান নির্ধারণ করা হলে, এটি পরিবর্তন করা যাবে না। 
+তবে, এটি মনে রাখতে হবে যে একটি final ভেরিয়েবলকে ব্যবহার করার আগে অবশ্যই ইনিশিয়ালাইজ করতে হবে, এবং একবার মান নির্ধারণ করা হলে আর পরিবর্তন করা যাবে না।
+
+### `final` এর মূল বৈশিষ্ট্য:
+1. **একটি মান একবার সেট করা যাবে**: `final` ভেরিয়েবলকে একবার মান দেওয়া হলে, তা আর পরিবর্তন করা যাবে না।
+2. **পরবর্তীতে মান সেট করা**: `final` ভেরিয়েবলকে প্রথমে মান নির্ধারণ না করলে, আপনি `late` কীওয়ার্ড ব্যবহার করতে পারেন, তবে একবার সেট করা হলে এটি পরিবর্তন করা যাবে না।
+3. **রানটাইম মান**: `final` ভেরিয়েবলগুলির মান রানটাইমে নির্ধারিত হতে পারে, কিন্তু একবার সেট করা হলে তা অপরিবর্তনীয়।
+
+## const
+
+ডার্টে const কীওয়ার্ড ব্যবহার করা হয় এমন ভেরিয়েবল বা অবজেক্ট তৈরি করতে যেগুলি কম্পাইল টাইমে (compile-time) নির্ধারিত হয় এবং যেগুলি একবার সেট হওয়ার পর পরিবর্তন করা যায় না। 
+const একটি কম্পাইল টাইম কনস্ট্যান্ট তৈরি করতে ব্যবহৃত হয়, অর্থাৎ এটি এমন মান বা অবজেক্ট যা প্রোগ্রাম চলাকালীন সময়ে নয়, বরং প্রোগ্রাম কম্পাইল হওয়ার সময় নির্ধারিত হয়।
 
 # Mutable and Immutable
 
@@ -148,6 +165,7 @@ Because it gives you a standard structure and lets you build apps that follow Ma
 You must use Scaffold inside a MaterialApp to get full Material functionality.
 
 # Null safety and null variable
+
 
 
 
