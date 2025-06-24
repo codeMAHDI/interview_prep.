@@ -254,7 +254,7 @@ name ??= "Fallback Name";  // Assigns "Fallback Name" if name is null
 - Tools like the `late` keyword, null assertion operator (`!`), and null-aware operators help manage nullable types efficiently.
 - Migrating to null safety involves updating the Dart SDK, dependencies, and your code, and Dart provides tools to assist with the migration process.
 
-## **Final Notes:**
+## Final Notes
 - Make sure to **embed code snippets** in Notion in code blocks so they’re clearly visible.
 - You can also add **images** or **diagrams** explaining concepts like nullable vs non-nullable types if you like.
 - Consider adding a **related resources section** with links to documentation, blog posts, or videos to further deepen the knowledge.
