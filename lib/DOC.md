@@ -173,7 +173,6 @@ stdout.writeln();// For this import ('dart:io')
    | `loadingBuilder` | Custom loading widget while loading    | Show progress indicator         |
    | `errorBuilder`   | Handle image load errors               | Show fallback UI                |
 
-
 ## Why use MaterialApp?
 1. Gives access to Material widgets like Scaffold, AppBar, FloatingActionButton, etc.
 2. Makes your app look and feel like a real Android app.
