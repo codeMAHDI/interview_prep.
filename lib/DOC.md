@@ -261,13 +261,9 @@ name ??= "Fallback Name";  // Assigns "Fallback Name" if name is null, can assig
 - By default, Dart variables are non-nullable. To allow null values, you must explicitly mark types as nullable.
 - Tools like the `late` keyword, null assertion operator (`!`), and null-aware operators help manage nullable types efficiently.
 - Migrating to null safety involves updating the Dart SDK, dependencies, and your code, and Dart provides tools to assist with the migration process.
+- Run time error theke bachay compile time error dey
+- Nullable(Null o assign hobe, value o assign hobe), late(porobortite hobe assign)
 
-## Final Notes
-- Make sure to **embed code snippets** in Notion in code blocks so they’re clearly visible.
-- You can also add **images** or **diagrams** explaining concepts like nullable vs non-nullable types if you like.
-- Consider adding a **related resources section** with links to documentation, blog posts, or videos to further deepen the knowledge.
-
-This should give you a clean, informative, and easy-to-understand presentation in Notion about **Null Safety** and **Null Variables** in Dart!
 
 
 
