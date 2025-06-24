@@ -174,11 +174,11 @@ stdout.writeln();// For this import ('dart:io')
    | `errorBuilder`   | Handle image load errors               | Show fallback UI                |
 
 ## Why use MaterialApp?
-1. Gives access to Material widgets like Scaffold, AppBar, FloatingActionButton, etc.
+1. Gives access to **Material widgets like Scaffold, AppBar, FloatingActionButton**, etc.
 2. Makes your app look and feel like a real Android app.
 
 ## Why use Scaffold?
-Because it gives you a standard structure and lets you build apps that follow Material Design without doing everything manually.
+Because **it gives you a standard structure** and lets you build apps that follow Material Design without doing everything manually.
 
 ### Quick Note:
 You must use Scaffold inside a MaterialApp to get full Material functionality.
