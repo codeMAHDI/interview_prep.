@@ -116,6 +116,12 @@ const একটি কম্পাইল টাইম কনস্ট্যা�
 final int runtimeValue = DateTime.now().year;  // রানটাইম মান
 const int compileTimeValue = 42;  // কম্পাইল টাইম মান
 ```
+| Aspect      | Compile Time             | Run Time                      |
+| ----------- | ------------------------ | ----------------------------- |
+| When?       | Before the app runs      | While the app is running      |
+| Errors type | Syntax, type errors      | Logic, runtime crashes        |
+| Fixed by    | Developer before running | Often needs try-catch, checks |
+| Example     | Missing semicolon        | Dividing by zero              |
 
 # Mutable and Immutable
 
