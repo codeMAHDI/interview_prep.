@@ -83,11 +83,6 @@ _List- is a ordered collection of object._
 
 # final vs const
 
-const(works in compile time)-> porobortite value change kora jay na ekbar value diye dile.
-final(works in run time)-> porobortite value assign kora jabe variable declare er por. But ekbar assign kore felle ta change kora jabe na.
-1. const a initially value set korte hobe.
-2. final a initially value set na korleo pore jeta set hobe shetai final hobe.
-
 ## Final
 
 ডার্টে final কীওয়ার্ড একটি ভেরিয়েবল ঘোষণা করতে ব্যবহৃত হয় যা শুধুমাত্র একবার মান সেট করা যাবে। একবার মান নির্ধারণ করা হলে, এটি পরিবর্তন করা যাবে না। 
@@ -96,6 +91,10 @@ final(works in run time)-> porobortite value assign kora jabe variable declare e
 ### `final` এর মূল বৈশিষ্ট্য:
 1. **একটি মান একবার সেট করা যাবে**: `final` ভেরিয়েবলকে একবার মান দেওয়া হলে, তা আর পরিবর্তন করা যাবে না।
 2. **পরবর্তীতে মান সেট করা**: `final` ভেরিয়েবলকে প্রথমে মান নির্ধারণ না করলে, আপনি `late` কীওয়ার্ড ব্যবহার করতে পারেন, তবে একবার সেট করা হলে এটি পরিবর্তন করা যাবে না।
+   // Late ইনিশিয়ালাইজেশন
+   late final String greeting;
+   greeting = "Hello, Dart!";  // একবার সেট করা
+   print(greeting);
 3. **রানটাইম মান**: `final` ভেরিয়েবলগুলির মান রানটাইমে নির্ধারিত হতে পারে, কিন্তু একবার সেট করা হলে তা অপরিবর্তনীয়।
 
 ## const
