@@ -349,7 +349,44 @@ int result = add(3, 4);  // result = 7
 ```dart
 int square(int x) => x * x;
 ```
+- Anonymous function
+- Higher order function
 ## Function with Parameters
+- Positional Parameters (Required)(You must pass the argument in the correct order.)
+```dart
+void greet(String name) {
+  print("Hello, $name!");
+}
+greet("Moshiur"); // Output: Hello, Moshiur!
+```
+- Optional Positional Parameters(Use square brackets [] for optional parameters)
+```dart
+void greet(String name, [String? title]) {
+  if (title != null) {
+    print("Hello, $title $name!");
+  } else {
+    print("Hello, $name!");
+  }
+}
+greet("Moshiur");               // Hello, Moshiur!
+greet("Moshiur", "Mr.");        // Hello, Mr. Moshiur!
+```
+- Named Parameters(Use curly braces {} for named parameters. Call them by name for clarity)
+```dart
+void greet({required String name, String title = "Mr."}) {
+  print("Hello, $title $name!");
+}
+greet(name: "Moshiur");              // Hello, Mr. Moshiur!
+greet(name: "Moshiur", title: "Dr."); // Hello, Dr. Moshiur!
+```
+- Mixed Parameters (Positional + Named)
+```dart
+void greet(String timeOfDay, {required String name}) {
+  print("Good $timeOfDay, $name!");
+}
+greet("Morning", name: "Moshiur"); // Good Morning, Moshiur!
+```
+
 
 
 
