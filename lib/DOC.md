@@ -349,7 +349,7 @@ int result = add(3, 4);  // result = 7
 ```dart
 int square(int x) => x * x;
 ```
-- Anonymous function
+- Anonymous function & lambdas function
 - Higher order function
 - Call back function
 ## Function with Parameters
