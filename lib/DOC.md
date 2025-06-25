@@ -264,6 +264,21 @@ name ??= "Fallback Name";  // Assigns "Fallback Name" if name is null, can assig
 - Run time error theke bachay compile time error dey
 - Nullable(Null o assign hobe, value o assign hobe), late(porobortite hobe assign)
 
+# Layout widget and placements
+Layout widgets are like containers or organizers that decide where and how your UI elements (Text, Image, Button, etc.) appear on the screen.
+### Common Layout Widgets and Their Placements
+| Widget      | Placement Behavior                         | Example Usage                      |
+| ----------- | ------------------------------------------ | ---------------------------------- |
+| `Row`       | Places widgets **horizontally**            | Buttons side-by-side               |
+| `Column`    | Places widgets **vertically**              | Texts stacked one below another    |
+| `Stack`     | Places widgets **on top of each other**    | Overlay text on image              |
+| `Container` | Holds one child with **custom size/space** | Add padding, margin, color, etc.   |
+| `Center`    | Places child in the **center**             | Center text or image               |
+| `Padding`   | Adds space **inside** around a widget      | Keep distance inside button        |
+| `SizedBox`  | Gives **fixed width/height**               | Add spacing between widgets        |
+| `Expanded`  | Fills available space inside Row/Column    | Make widget stretch                |
+| `Wrap`      | Wraps items **to next line** if needed     | Chips or buttons in multi-line row |
+| `Align`     | Aligns child to a **specific corner/side** | Bottom right, center left, etc.    |
 
 
 
