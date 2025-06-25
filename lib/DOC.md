@@ -280,6 +280,10 @@ Layout widgets are like containers or organizers that decide where and how your 
 | `Wrap`      | Wraps items **to next line** if needed     | Chips or buttons in multi-line row |
 | `Align`     | Aligns child to a **specific corner/side** | Bottom right, center left, etc.    |
 
-
+### Note
+1. Row-> x-> main axis, y-> cross axis.
+2. Col->y -> main axis, x-> cross axis.
+3. Col er khetre main axis hoy upor theke niche, r cross axis horizontally.
+4. Row er khetre main axis hoy horizontally, r cross axis vertically.
 
 
