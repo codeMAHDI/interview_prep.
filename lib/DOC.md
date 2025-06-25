@@ -290,7 +290,21 @@ mainAxisAlignment:
 1. spaceBetween-> Nijeder modde space e equal gap rakhbe
 2. spaceEvenly-> Left+Right equal distance rakhbe
 3. spaceAround-> Left e jototuku space nibe Right eo same space nibe
+4. So mainAxisAlignment:
+- In a Row → controls horizontal alignment
+- In a Column → controls vertical alignment
+   | Value                            | Meaning                                       |
+   | -------------------------------- | --------------------------------------------- |
+   | `MainAxisAlignment.start`        | Align children at the **start** of main axis  |
+   | `MainAxisAlignment.end`          | Align children at the **end** of main axis    |
+   | `MainAxisAlignment.center`       | Align children at the **center**              |
+   | `MainAxisAlignment.spaceBetween` | Space between items, no space at ends         |
+   | `MainAxisAlignment.spaceAround`  | Even space around all items                   |
+   | `MainAxisAlignment.spaceEvenly`  | Equal space between all items including edges |
 ### Note
 1. MainAxisSize.min/max-> min dile jotogula element ache tototuku jayga nibe. Purata nibe na. By default max thake.
+
+# Function in Flutter
+
 
 
