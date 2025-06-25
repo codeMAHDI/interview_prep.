@@ -349,6 +349,9 @@ int result = add(3, 4);  // result = 7
 ```dart
 int square(int x) => x * x;
 ```
+## Function with Parameters
+
+
 
 
 
