@@ -351,6 +351,7 @@ int square(int x) => x * x;
 ```
 - Anonymous function
 - Higher order function
+- Call back function
 ## Function with Parameters
 - Positional Parameters (Required)(You must pass the argument in the correct order.)
 ```dart
