@@ -306,5 +306,50 @@ mainAxisAlignment:
 
 # Function in Flutter
 
+- A function in Flutter (Dart) is a block of reusable code that performs a specific task.
+
+### Basic Syntax
+```dart
+void myFunction() {
+  print('Hello from function!');
+}
+```
+### To call it
+```dart
+myFunction(); // Output: Hello from function!
+```
+## Function Types
+- Void Function (No return value)
+```dart
+void greetUser() {
+  print("Welcome!");
+}
+```
+- Function with Parameters
+```dart
+void greet(String name) {
+  print("Hello, $name!");
+}
+```
+### Call it like
+```dart
+greet("Moshiur"); // Hello, Moshiur!
+```
+- Function with Return Value
+```dart
+int add(int a, int b) {
+  return a + b;
+}
+```
+### Call it
+```dart
+int result = add(3, 4);  // result = 7
+```
+- Arrow Function (Short form)
+```dart
+int square(int x) => x * x;
+```
+
+
 
 
