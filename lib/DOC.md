@@ -284,6 +284,13 @@ Layout widgets are like containers or organizers that decide where and how your 
 1. Row-> x-> main axis, y-> cross axis.
 2. Col->y -> main axis, x-> cross axis.
 3. Col er khetre main axis hoy upor theke niche, r cross axis horizontally.
-4. Row er khetre main axis hoy horizontally, r cross axis vertically.
+4. Row er khetre main axis hoy horizontally, r cross axis vertically.0
+### Spacing er jonno
+mainAxisAlignment: 
+1. spaceBetween-> Nijeder modde space e equal gap rakhbe
+2. spaceEvenly-> Left+Right equal distance rakhbe
+3. spaceAround-> Left e jototuku space nibe Right eo same space nibe
+### Note
+1. MainAxisSize.min/max-> min dile jotogula element ache tototuku jayga nibe. Purata nibe na. By default max thake.
 
 
