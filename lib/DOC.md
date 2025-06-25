@@ -268,7 +268,7 @@ name ??= "Fallback Name";  // Assigns "Fallback Name" if name is null, can assig
 Layout widgets are like containers or organizers that decide where and how your UI elements (Text, Image, Button, etc.) appear on the screen.
 ### Common Layout Widgets and Their Placements
 | Widget      | Placement Behavior                         | Example Usage                      |
-| ----------- | ------------------------------------------ | ---------------------------------- |
+|-------------|--------------------------------------------|------------------------------------|
 | `Row`       | Places widgets **horizontally**            | Buttons side-by-side               |
 | `Column`    | Places widgets **vertically**              | Texts stacked one below another    |
 | `Stack`     | Places widgets **on top of each other**    | Overlay text on image              |
