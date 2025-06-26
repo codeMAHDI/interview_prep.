@@ -465,6 +465,46 @@ greet("Morning", name: "Moshiur"); // Good Morning, Moshiur!
 ```
 
 # Container
+## Common Properties
+| Property                | What it Does                                |
+|:------------------------|:--------------------------------------------|
+| `width`, `height`       | Size of the container                       |
+| `color`                 | Background color                            |
+| `padding`               | Space **inside** the container              |
+| `margin`                | Space **outside** the container             |
+| `alignment`             | Aligns the child widget                     |
+| `decoration`            | Add borders, gradients, rounded corners     |
+| `child`                 | Widget placed inside the container          |
+| `foregroundDecoration`  | Decoration that appears on top of the child |
+| `constraints`           | Set min/max width and height                |
+
+```dart
+Container(
+  width: 200,
+  height: 100,
+  padding: EdgeInsets.all(16),
+  margin: EdgeInsets.only(top: 20),
+  alignment: Alignment.center,
+  decoration: BoxDecoration(
+    color: Colors.blue,
+    borderRadius: BorderRadius.circular(12),
+    border: Border.all(color: Colors.black, width: 2),
+  ),
+  child: Text(
+    'Hello Container!',
+    style: TextStyle(color: Colors.white),
+  ),
+)
+```
+```dart
+decoration: BoxDecoration(
+  color: Colors.orange,
+  gradient: LinearGradient(colors: [Colors.orange, Colors.red]),
+  boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 5)],
+  borderRadius: BorderRadius.circular(10),
+),
+```
+
 
 
 
