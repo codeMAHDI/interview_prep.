@@ -504,9 +504,25 @@ decoration: BoxDecoration(
   borderRadius: BorderRadius.circular(10),
 ),
 ```
+### What is constraints in a Flutter Container?
+- constraints lets you tell the Container: “You can’t be smaller or bigger than this size.”
+```dart
+Container(
+  constraints: BoxConstraints(
+    minWidth: 100,
+    maxWidth: 200,
+    minHeight: 50,
+    maxHeight: 100,
+  ),
+  color: Colors.green,
+  child: Text("I’m constrained"),
+)
+```
+### Quick Note
+- Kono container a child na thakle sheta pura screen jayga nibe. but child just child er jayga tuku nibe.
+- Container er modde decoration use korle container er color ta decoration er under e jabe .
 
-
-
+# Class & Constructor
 
 
 
