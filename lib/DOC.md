@@ -306,7 +306,7 @@ mainAxisAlignment:
 
 # Function in Flutter
 
-- A function in Flutter (Dart) is a block of reusable code that performs a specific task.
+- A function in Flutter (Dart) is a **block of reusable code** that performs a **specific task**.
 
 ### Basic Syntax
 ```dart
@@ -350,8 +350,84 @@ int result = add(3, 4);  // result = 7
 int square(int x) => x * x;
 ```
 - Anonymous function & lambdas function
+1. A function without a name.
+2. It’s used once or inline, often as an argument to another function like a button or loop.
+### Example in Flutter (Button):
+```dart
+ElevatedButton(
+  onPressed: () {
+    print("Button clicked!");
+  },
+  child: Text('Click Me'),
+);
+```
+- () { print("..."); } is an anonymous function passed to onPressed.
+### Compare with Named Function
+```dart
+void sayHello() {
+  print("Hi!");
+}
+sayHello();
+```
+### Anonymous
+```dart
+() {
+  print("Hi!");
+}(); // Called immediately
+```
+### lambda function
+```dart
+ElevatedButton(
+onPressed: () => print("Clicked!"),
+child: Text('Click Me'),
+);
+```
 - Higher order function
+1. A higher-order function is a function that does one or both of the following:Takes another function as a parameter, Returns a function.
+### Takes a Function as a Parameter
+```dart
+void greet(String name, Function callback) {
+  print("Hello, $name!");
+  callback(); // calling the function passed in
+}
+void sayThanks() {
+  print("Thanks for visiting!");
+}
+greet("Moshiur", sayThanks);
+```
+### Output
+Hello, Moshiur!
+Thanks for visiting!
+### Returns a Function
+```dart
+Function multiplyBy(int n) {
+  return (int x) => x * n;  // returns a function!
+}
+var doubleIt = multiplyBy(2);
+print(doubleIt(5)); // Output: 10
+```
 - Call back function
+1. Tell me what to do after this is done.(A callback function is a function that you pass as an argument to another function, and it is called later, usually after something happens (like a button tap or API response).)
+### Flutter Button Example
+```dart
+ElevatedButton(
+  onPressed: () {
+    handleClick(); // this is a callback
+  },
+  child: Text('Click Me'),
+);
+void handleClick() {
+  print("Button clicked!");
+}
+```
+### Why Use Callback Functions?
+| 🔸 Use Case           | 🔹 Purpose                         |
+| --------------------- | ---------------------------------- |
+| Buttons (`onPressed`) | Respond to user interaction        |
+| APIs / Delays         | Run logic after data loads         |
+| Custom Widgets        | Let child talk to parent           |
+| Animations            | Run code after animation completes |
+
 ## Function with Parameters
 - Positional Parameters (Required)(You must pass the argument in the correct order.)
 ```dart
@@ -388,6 +464,7 @@ void greet(String timeOfDay, {required String name}) {
 greet("Morning", name: "Moshiur"); // Good Morning, Moshiur!
 ```
 
+# Container
 
 
 
