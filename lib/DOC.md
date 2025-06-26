@@ -472,7 +472,7 @@ greet("Morning", name: "Moshiur"); // Good Morning, Moshiur!
 | `color`                 | Background color                            |
 | `padding`               | Space **inside** the container              |
 | `margin`                | Space **outside** the container             |
-| `alignment`             | Aligns the child widget                     |
+| `alignment`             | Aligns the child widget(Container Child)    |
 | `decoration`            | Add borders, gradients, rounded corners     |
 | `child`                 | Widget placed inside the container          |
 | `foregroundDecoration`  | Decoration that appears on top of the child |
