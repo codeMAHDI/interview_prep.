@@ -569,3 +569,61 @@ class ClassName {
 
 # Constructor
 
+- A constructor is a special method in a class that runs automatically when you create an object. 
+- It’s used to initialize (set up) the values of the class.
+- A constructor helps you set up values when you make an object from a class.
+### Basic Example
+```dart
+class Person {
+  String name;
+  int age;
+  // Constructor
+  Person(String n, int a) {
+    name = n;
+    age = a;
+  }
+  void showInfo() {
+    print("Name: $name, Age: $age");
+  }
+}
+void main() {
+  Person p = Person("Moshiur", 22); // 👈 Constructor runs here
+  p.showInfo(); // Output: Name: Moshiur, Age: 22
+}
+```
+### Shorter Way (Using this)
+```dart
+class Person {
+  String name;
+  int age;
+  // Short constructor
+  Person(this.name, this.age);
+}
+```
+- this.name means: assign the constructor value to the class variable.
+### Named Constructor Example
+```dart
+class Person {
+  String name;
+  int age;
+  Person(this.name, this.age);
+  // Named constructor
+  Person.young(String name) {
+    this.name = name;
+    this.age = 10;
+  }
+}
+void main() {
+  var child = Person.young("Ali");
+  print("${child.name}, ${child.age}"); // Ali, 10
+}
+```
+### Why Use Constructors?
+| Use Case             | Benefit                  |
+|----------------------|--------------------------|
+| Create class objects | Set initial values       |
+| Reduce repetition    | Easy and clean syntax    |
+| Named constructors   | Create variations easily |
+
+### Summary
+- A constructor runs automatically when an object is created from a class. It helps set up the initial values of your object.
