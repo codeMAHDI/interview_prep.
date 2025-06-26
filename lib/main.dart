@@ -19,21 +19,22 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        width: 200,
-        height: 200,
-        color: Colors.grey[300],
-        child: Stack(
-          children: [
-            Container(width: 100, height: 100, color: Colors.blue),
-            Positioned(
-              top: 20,
-              left: 20,
-              child: Container(width: 60, height: 60, color: Colors.red),
-            ),
-          ],
+      backgroundColor: Colors.black,
+      body: Center(
+        child: Container(
+          width: 300,
+          height: 300,
+          padding: EdgeInsets.all(16),
+          margin: EdgeInsets.only(top: 20),
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            color: Colors.blue,
+            shape: BoxShape.circle,
+            border: Border.all(color: Colors.white, width: 10),
+          ),
+          child: Icon(Icons.account_circle,size: 250,)
         ),
-      ),
+      )
     );
   }
 }

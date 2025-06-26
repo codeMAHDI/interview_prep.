@@ -117,7 +117,7 @@ final int runtimeValue = DateTime.now().year;  // রানটাইম মা�
 const int compileTimeValue = 42;  // কম্পাইল টাইম মান
 ```
 | Aspect      | Compile Time             | Run Time                      |
-| ----------- | ------------------------ | ----------------------------- |
+|-------------|--------------------------|-------------------------------|
 | When?       | Before the app runs      | While the app is running      |
 | Errors type | Syntax, type errors      | Logic, runtime crashes        |
 | Fixed by    | Developer before running | Often needs try-catch, checks |
@@ -422,7 +422,7 @@ void handleClick() {
 ```
 ### Why Use Callback Functions?
 | 🔸 Use Case           | 🔹 Purpose                         |
-| --------------------- | ---------------------------------- |
+|-----------------------|------------------------------------|
 | Buttons (`onPressed`) | Respond to user interaction        |
 | APIs / Delays         | Run logic after data loads         |
 | Custom Widgets        | Let child talk to parent           |
@@ -522,8 +522,50 @@ Container(
 - Kono container a child na thakle sheta pura screen jayga nibe. but child just child er jayga tuku nibe.
 - Container er modde decoration use korle container er color ta decoration er under e jabe .
 
-# Class & Constructor
+# Class 
+- void main(){int age=15;}-> directly assign value etake bole preemptive(int, double, float)/primary type. Same kajta class e o hoy. Class obj. creation er maddome data store kore
+- A class is like a blueprint for creating objects.
+- It defines what an object is (its properties) and what it can do (its methods).
 
+### Example
+```dart
+class Person {
+  String name = '';
+  int age = 0;
+  void sayHello() {
+    print("Hi, I'm $name and I'm $age years old.");
+  }
+}
+```
+### This class says:
+- Every Person has a name and age.
+- And they can sayHello()
+### Creating and Using an Object
+```dart
+void main() {
+  Person p = Person();   // Create object
+  p.name = "Moshiur";
+  p.age = 25;
+  p.sayHello();          // Output: Hi, I'm Moshiur and I'm 25 years old.
+}
+```
+### Class Structure
+```dart
+class ClassName {
+  // Properties (variables)name, age
+  // Constructor (optional)
+  // Methods (functions)
+}
+```
+### Why Use Classes in Flutter?
+| Use Case           | Benefit                           |
+|--------------------|-----------------------------------|
+| Model data         | Represent users, products, etc.   |
+| Reusable logic     | Define once, use many times       |
+| Organize your code | Keep UI, data, and logic separate |
 
+- Blue print(class), Civil engineer(Constructor)
+- jokhon method class er outside likha hobe tokhon sheta function, jetar shathe class er kono relation nai.
 
+# Constructor
 
