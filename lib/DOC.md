@@ -665,3 +665,127 @@ void main() {
 ```dart
 print(a>b?"a is greater":"b is greater")
 ```
+# Exception & Exception Handling
+- An exception is an error that happens while the program is running (runtime).
+- For example: dividing by zero, accessing a file that doesn't exist, or calling a method on null.
+- “Something went wrong — but the app shouldn’t crash!”
+### Example of an Exception
+```dart
+void main() {
+  int x = 10;
+  int y = 0;
+  print(x ~/ y); // ❗ This will throw an exception: IntegerDivisionByZeroException
+}
+```
+### How to Handle Exceptions: try - catch
+```dart
+void main() {
+  try {
+    int result = 10 ~/ 0;
+    print("Result: $result");
+  } catch (e) {
+    print("An error occurred: $e");
+  }
+}
+```
+### try - catch - finally (optional cleanup)
+```dart
+void main() {
+  try {
+    int result = 10 ~/ 0;
+    print("Result: $result");
+  } catch (e) {
+    print("Error: $e");
+  } finally {
+    print("This always runs.");
+  }
+}
+```
+### Catching Specific Exception
+```dart
+void main() {
+  try {
+    int result = int.parse("abc"); // FormatException
+    print("Result: $result");
+  } on FormatException catch (e) {
+    print("Invalid number format: $e");
+  }
+}
+```
+### Summary
+| Keyword    | Use                                           |
+|------------|-----------------------------------------------|
+| `try`      | Block of code that may throw an exception     |
+| `catch(e)` | Handles the exception if one occurs           |
+| `on`       | Handles a **specific** type of exception      |
+| `finally`  | Always runs, even if there is an error or not |
+
+### What is a Custom Exception in Dart?
+- It's like saying: “When this very specific thing goes wrong, I want to throw my own message, not just a generic error.” 
+
+### Step 1: Create a Custom Exception Class
+```dart
+class InvalidAgeException implements Exception {
+  String errorMessage() {
+    return "Age must be greater than 0!";
+  }
+}
+```
+### Step 2: Use throw to Raise It
+```dart
+void checkAge(int age) {
+  if (age <= 0) {
+    throw InvalidAgeException();
+  } else {
+    print("Age is valid: $age");
+  }
+}
+```
+### Step 3: Catch It
+```dart
+void main() {
+  try {
+    checkAge(0); // ❗ Invalid input
+  } catch (e) {
+    print("Caught an exception: ${e is InvalidAgeException ? e.errorMessage() : e}");//Caught an exception: Age must be greater than 0!
+  }
+}
+```
+### Why Use Custom Exceptions?
+| Reason                           | Example                                   |
+|----------------------------------|-------------------------------------------|
+| Show clearer error messages      | "User not found" instead of generic crash |
+| Handle domain-specific errors    | Like banking errors, invalid email, etc.  |
+| Keep your code clean & organized | Separate error logic for different cases  |
+### What is a Stack Trace in Dart (Flutter)?
+- Imagine your program is walking through a set of stairs (functions). 
+- If it falls, the stack trace shows which steps (functions) it took before falling.
+```dart
+void levelOne() {
+  levelTwo();
+}
+void levelTwo() {
+  throw Exception("Something went wrong!");
+}
+void main() {
+  try {
+    levelOne();
+  } catch (e, stackTrace) {
+    print("Error: $e");
+    print("Stack Trace: $stackTrace");
+  }
+}
+```
+### Output
+```dart
+Error: Exception: Something went wrong!
+Stack Trace: 
+#0      levelTwo (main.dart:6:7)
+#1      levelOne (main.dart:2:3)
+#2      main (main.dart:10:5)
+```
+### Propagation of Exception
+- Suppose method 1 e kaj kore se method 2 call kore and method 2 method 3 ke call kore. 
+- And 2,3 method e Exception handling kora nai. Program ki crash korbe?
+- It doesn't matter tmi 2/3 method handle koro nai. But jekhan theke initially call korso shekhane jodi handle kora thake taholei cholbe.
+- Method 3 e Exception paise  se method 2 e propagate korbe. 2 te Exception paise 1 e propagate korbe then catch block e pathay dibe.
