@@ -660,3 +660,8 @@ void main() {
 ### Note
 - this.name(current je obj create hocche shetar je property ache name er modde value set hobe parameter theke je value asbe)
 - constructor use kortesi barbar object creation er jamela theke muktir jonno. constructor class theke info niye memory te ekta physical object create kore dey 
+
+# Ternary Operator
+```dart
+print(a>b?"a is greater":"b is greater")
+```
