@@ -627,3 +627,36 @@ void main() {
 
 ### Summary
 - A constructor runs automatically when an object is created from a class. It helps set up the initial values of your object.
+### Real-Life Story: Constructor at a Hotel
+You go to a hotel to check in. When you reach the front desk, the receptionist asks:
+- “What’s your name, age, and 
+- how many nights will you stay?”
+You give your details:
+- Name: Moshiur 
+- Age: 22 
+- Nights: 3
+The receptionist fills out a form (object) using a template (class) and your info (parameters).
+That form is now your booking record!
+### Dart Code Version of the Story
+```dart
+class HotelGuest {
+  String name;
+  int age;
+  int nights;
+  // 👇 Constructor sets up the guest’s info
+  HotelGuest(this.name, this.age, this.nights);
+  void welcomeMessage() {
+    print("Welcome $name! You are $age years old and staying for $nights nights.");
+  }
+}
+void main() {
+  // 🎟️ Check-in: Create a guest object using the constructor
+  HotelGuest guest1 = HotelGuest("Moshiur", 22, 3);
+  guest1.welcomeMessage();//Welcome Moshiur! You are 22 years old and staying for 3 nights.
+}
+```
+### Moral of the Story
+- The constructor is like the hotel receptionist — it helps you create a complete guest object by asking for the needed information up front.
+### Note
+- this.name(current je obj create hocche shetar je property ache name er modde value set hobe parameter theke je value asbe)
+- constructor use kortesi barbar object creation er jamela theke muktir jonno. constructor class theke info niye memory te ekta physical object create kore dey 
