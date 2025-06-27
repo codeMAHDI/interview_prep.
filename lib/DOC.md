@@ -571,7 +571,7 @@ class ClassName {
 
 - A constructor is a special method in a class that runs automatically when you create an object. 
 - It’s used to initialize (set up) the values of the class.
-- A constructor helps you set up values when you make an object from a class.
+
 ### Basic Example
 ```dart
 class Person {
