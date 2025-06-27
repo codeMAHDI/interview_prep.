@@ -668,7 +668,7 @@ print(a>b?"a is greater":"b is greater")
 # Exception & Exception Handling
 - An exception is an error that happens while the program is running (runtime).
 - For example: dividing by zero, accessing a file that doesn't exist, or calling a method on null.
-- “Something went wrong — but the app shouldn’t crash!”
+- “Something went wrong — but the app shouldn’t crash!”(Exception Handling)
 ### Example of an Exception
 ```dart
 void main() {
