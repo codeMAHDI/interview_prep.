@@ -1001,7 +1001,6 @@ void main() {
 ```dart
 abstract class Animal {
   void sound();  // abstract method
-
   void eat() {
     print("Eating food");
   }
@@ -1022,7 +1021,6 @@ void main() {
   Dog dog = Dog();
   dog.sound();  // Output: Barking
   dog.eat();    // Output: Eating food
-
   Cat cat = Cat();
   cat.sound();  // Output: Meowing
   cat.eat();    // Output: Eating food
@@ -1040,3 +1038,33 @@ void main() {
 1. **সহজ ডিজাইন**: অ্যাবস্ট্রাকশন আমাদের জটিলতা লুকাতে সহায়ক, যাতে কোড আরও পরিষ্কার এবং সহজ হয়।
 2. **পুনঃব্যবহারযোগ্যতা**: একবার একটি অ্যাবস্ট্রাক্ট ক্লাস তৈরি করলে, আপনি সেটি বিভিন্ন ক্লাসে ইনহেরিট করে ব্যবহার করতে পারেন।
 3. **বহুমুখীতা**: একাধিক ক্লাস একে অপরের থেকে পৃথকভাবে অ্যাবস্ট্রাক্ট ক্লাস ব্যবহার করে বিভিন্ন কাজ করতে পারে, যার ফলে কোড আরও পোর্টেবল ও ফ্লেক্সিবল হয়।
+
+# Map to JSON and JSON to Map
+
+- JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate. 
+- It is primarily used to transmit data between a server and a web application as text, and it is commonly used for serializing and deserializing structured data.
+
+### JSON Structure:
+
+JSON is composed of two main structures:
+1. **Objects**: A collection of key-value pairs enclosed in curly braces `{}`. The keys are strings, and the values can be any valid JSON data type.
+2. **Arrays**: An ordered list of values enclosed in square brackets `[]`. Values can be strings, numbers, objects, or even other arrays.
+
+- In Dart, converting JSON data to a Map is a common task, especially when working with APIs or handling serialized data. Dart provides the dart:convert library, which includes functions like json.decode() to convert a JSON string into a Map. Here’s how you can work with JSON and maps in Dart.
+### Steps to Convert JSON to Map in Dart:
+1. **Import the `dart:convert` library**: This library contains the `json.decode()` function, which you will use to parse the JSON string.
+2. **Use `json.decode()`**: This function converts a JSON string into a Dart object. In the case of JSON representing a simple object, it is converted into a `Map<String, dynamic>`, where `String` is the type of the keys and `dynamic` is the type of the values.
+
+- Example of JSON
+```dart
+dart
+Copy code
+String jsonString =
+{
+  "name": "Alice",
+  "age": 30,
+  "isStudent": false,
+  "courses": ["Math", "Science", "History"]
+}
+```
+### Convert 
