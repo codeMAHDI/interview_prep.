@@ -1100,3 +1100,54 @@ void main() {
   print('স্টুডেন্ট: ${user['isStudent']}');
 }
 ```
+
+## Custom Class
+```dart
+class User {
+  final int id;
+  final String name;
+  final String email;
+  User({required this.id, required this.name, required this.email});
+  // JSON থেকে User বানানোর জন্য
+  factory User.fromJson(Map<String, dynamic> json) {
+    return User(
+      id: json['id'],
+      name: json['name'],
+      email: json['email'],
+    );
+  }
+  // আবার User থেকে JSON বানানোর জন্য
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'name': name,
+      'email': email,
+    };
+  }
+}
+```
+```dart
+void main() {
+  Map<String, dynamic> jsonData = {
+    "id": 1,
+    "name": "Moshiur Rahman",
+    "email": "moshiur@example.com"
+  };
+  // JSON → Dart Object
+  User user = User.fromJson(jsonData);
+
+  // Dart Object → JSON
+  Map<String, dynamic> jsonAgain = user.toJson();
+
+  print(user.name);       // Moshiur Rahman
+  print(jsonAgain);       // {id: 1, name: Moshiur Rahman, email: moshiur@example.com}
+}
+```
+| Function     | কাজ                      |
+|--------------|--------------------------|
+| `fromJson()` | JSON → Dart Object বানায় |
+| `toJson()`   | Dart Object → JSON বানায় |
+
+### সংক্ষেপে:
+- API থেকে ডেটা আনতে fromJson()
+- API-তে ডেটা পাঠাতে বা সেভ করতে toJson()
