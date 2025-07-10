@@ -1179,3 +1179,39 @@ void main() {
 - API = সফটওয়্যারের মধ্যে যোগাযোগ করার উপায় 
 - REST = API বানানোর জন্য কিছু নিয়ম 
 - REST API = এমন API যেটা REST এর নিয়ম মেনে বানানো
+
+### API call
+- Dart ক্লাস তৈরি (Model Class)
+```dart
+class User {
+  final int id;
+  final String name;
+  final String email;
+
+  User({required this.id, required this.name, required this.email});
+
+  factory User.fromJson(Map<String, dynamic> json) {
+    return User(
+      id: json['id'],
+      name: json['name'],
+      email: json['email'],
+    );
+  }
+}
+```
+- API থেকে ডেটা ফেচ করার ফাংশন
+```dart
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+
+Future<List<User>> fetchUsers() async {
+  final response = await http.get(Uri.parse('https://jsonplaceholder.typicode.com/users'));
+
+  if (response.statusCode == 200) {
+    List<dynamic> data = jsonDecode(response.body);
+    return data.map((json) => User.fromJson(json)).toList();
+  } else {
+    throw Exception('Failed to load users');
+  }
+}
+```
