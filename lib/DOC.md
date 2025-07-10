@@ -1068,3 +1068,35 @@ String jsonString =
 }
 ```
 ### Convert 
+```dart
+import 'dart:convert';
+
+void main() {
+  // ডার্ট অবজেক্ট (Map)
+  Map<String, dynamic> user = {
+    'name': 'রহিম',
+    'age': 25,
+    'isStudent': true,
+  };
+
+  // ডার্ট অবজেক্ট থেকে JSON স্ট্রিং এ কনভার্ট করা
+  String jsonString = jsonEncode(user);
+
+  print('JSON স্ট্রিং: $jsonString');
+}
+```
+```dart
+import 'dart:convert';
+
+void main() {
+  // JSON স্ট্রিং
+  String jsonString = '{"name": "রহিম", "age": 25, "isStudent": true}';
+
+  // JSON স্ট্রিং থেকে ডার্ট অবজেক্টে কনভার্ট করা
+  Map<String, dynamic> user = jsonDecode(jsonString);
+
+  print('নাম: ${user['name']}');
+  print('বয়স: ${user['age']}');
+  print('স্টুডেন্ট: ${user['isStudent']}');
+}
+```
